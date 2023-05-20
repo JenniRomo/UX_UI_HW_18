@@ -231,11 +231,21 @@ label {
     align-items: center;
 }
 
-.itMe img{
+.itMe{
+   position: relative; 
+}
+
+.selfie{
     width: 375px;
     height: 450px;
     border-radius: 225px;
     object-fit: cover;
+    position: relative;
+}
+.itMe .learnMore{
+    position: absolute;
+    top: -15px;
+    left: -30px;
 }
 
 .description{
