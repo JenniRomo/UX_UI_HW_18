@@ -1,7 +1,9 @@
 body{
 margin: 0;
 padding: 0;
+background: #F5EEE6;
 }
+
 .navigation{
     display: flex;
     flex-direction: row;
@@ -10,7 +12,7 @@ padding: 0;
     width: 100%;
     height: 120px;
     background-color: #F5EEE6;
-    padding: 0% 2%;
+    padding: 0% 5%;
     top: 0px;
     box-sizing: border-box;
 }
@@ -35,6 +37,7 @@ nav li{
     font-weight: 700;
     font-size: 24px;
     color: #362F2E;
+    overflow: hidden;
 }
 
 ul{
@@ -55,12 +58,13 @@ li{
     gap: 5%;
     justify-content: center;
     align-items: center;
-    height: 635px;
+    height: 700px;
     width: 100%;
     top: 120px;
-    padding: 0% 2%;
+    padding: 0% 7%;
     box-sizing: border-box;
     background-color: #DE93C0;
+    overflow: hidden;
 }
 
 .intro{
@@ -94,6 +98,223 @@ li{
     position: relative;
 }
 
+.myWork h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 30px;
+    color: #5053A4;
+    text-align: center;
+}
+
+.workBtn{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+label {
+    width: 200px;
+    height: 60px;
+    background-color:#F5EEE6;
+    border-radius: 30px;
+    position: absolute;
+    outline: 3px solid #DE93C0;
+    cursor: pointer;
+  }
+
+  .toggle {
+    position: absolute;
+    width: 50%;
+    height: 60px;
+    background-color: #DE93C0;
+    border-radius: 30px;
+    left: -1px;
+  }
+
+  .names {
+    font-family: Lexend;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 3px 20px 0px;
+  }
+
+.uxWork{
+    color: #F5EEE6;
+    align-content: center;
+}
+
+.funWork{
+    color:#DE93C0
+}
+
+.workGrid{
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    width: 100%;
+    grid-gap: 20px;
+    padding: 60px 7% 0px;
+    box-sizing: border-box;
+}
+
+.caseStudy1{
+    grid-area: 1 / 2 / span 1 / span 6;
+}
+
+.caseStudy1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caseStudy2{
+    grid-area: 1 / 8 / span 1 / span 4;
+}
+
+.caseStudy2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caseStudy3{
+    grid-area: 2 / 2 / span 1 / span 5;
+}
+
+.caseStudy3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.caseStudy4{
+    grid-area: 2 / 7 / span 1 / span 5;
+}
+
+.caseStudy4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySkills{
+    margin-bottom: 120px;
+}
+
+.mySkills h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 800;
+    margin: 0;
+    padding: 120px 0px 30px;
+    color: #F36D36;
+    text-align: center;
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itMe img{
+    width: 375px;
+    height: 450px;
+    border-radius: 225px;
+    object-fit: cover;
+}
+
+.description{
+    width: 650px;
+    margin-left: 7%;
+    font-family: Lexend;
+    font-weight: 300;
+    font-size: 20px;
+    color: #362F2E;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.description p{ 
+    margin-bottom: 5%;
+}
+
+.contactMe{
+    background-color: #5053A4;
+    width: 100%;
+    padding: 120px 7%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.hitMeup{
+    width: 690px;
+}
+
+.hitMeup p{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 24px;
+    color: #F5EEE6;
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    padding-bottom: 30px;
+}
+
+.contactTitle{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    text-align: start;
+    padding-bottom: 5%;
+}
+
+.contactTitle .touch{
+    font-size: 64px;
+    color: #DE93C0;
+    margin: 0;
+}
+
+.contactTitle .hello{
+    font-size: 40px;
+    color: #F5EEE6;
+    margin: 0px;
+}
+
+.contactInfo{
+   display: flex;
+   align-items: left;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.contactInfo p{
+    margin: 0px;
+}
+
+.contactPic img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
 footer{
     display: flex;
     flex-direction: row;
@@ -102,18 +323,20 @@ footer{
     width: 100%;
     height: 120px;
     background-color: #F5EEE6;
-    padding: 0% 2%;
+    padding: 0% 5%;
     bottom: 0px;
     box-sizing: border-box;
 }
+
 footer li{
     padding-right: 120px;
     font-family: Lexend;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     color: #5053A4;
 }
+
 footer p{
     float: right;
     font-family: Lexend;
@@ -121,4 +344,27 @@ footer p{
     font-weight: 300;
     font-size: 16px;
     color: #5053A4;
+}
+
+@media only screen and (max-width: 600){
+    #mySkills{
+        flex-direction: column;
+        width: 100%;
+    }
+    #footer{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    #workGrid{
+        margin: 0px 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(4, 300px);
+        row-gap: 20px;
+        grid-template-areas: 
+        "caseStudy1"
+        "caseStudy2"
+        "caseStudy3"
+        "caseStudy4";
+    }
 }
